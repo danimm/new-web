@@ -1,8 +1,6 @@
 <template lang="pug">
   #app
     dm-header
-      router-link(to='/') Home
-      router-link(to='/about') About
     router-view
     dm-footer
 

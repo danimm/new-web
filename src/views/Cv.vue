@@ -10,11 +10,11 @@
         p This is just a small version using only CSS. It's not Responsive yet
         p If you want to see the complete pdf version, write me an email.
           a.button.is-link(href="mailto:info@danimm.com") Email me!
-    .content.description-right
+    .content.about
       h3.subtitle.is-3 About me
       p I am a curious, hard-working and ambitious person who pays attention to the small details. I am into the Frontend development world since 2016.
       p In addition I study on a daily basis using an online course format the new platform technologies, in order to be up to date regarding the new frameworks and skills that are used and demanded by the companies nowadays.
-    .content.ausbildung
+    .content.formation
       h3.title.is-3 Formation
       .content
         p.title Frontend web developer
@@ -60,13 +60,13 @@
           progress.progress.is-success(value="100" max="100")
           progress.progress.is-success(value="60" max="100")
           progress.progress.is-success(value="40" max="100")
-    .content.laboral
+    .content.work
       h3.title.is-3 Work experience
       strong Inventur Mitarbeiter
       p SPAR HANDELS AG | 2014 - currently
       strong Hardware-Techniker
       p X-TROM (Spanien) | 2012 - 2013
-    .content.referenze
+    .content.references
       h3.title.is-3 References
       .content
         p Monika Graf
@@ -99,9 +99,6 @@
     margin-top: 40px;
     grid-template-columns: 1fr 1fr 300px;
   }
-  .content {
-    /* border: 1px solid red; */
-  }
   .titulo {
     grid-column: 1 / span 2;
     text-align: end;
@@ -114,7 +111,7 @@
     grid-column: span 2;
     padding: 10px;
   }
-  .description-right {
+  .about {
     grid-row: span 2;
     grid-column: 3;
   }
@@ -130,13 +127,13 @@
     height: 380px;
     width: 100%;
   }
-  .ausbildung {
+  .formation {
     grid-column: span 2;
   }
-  .ausbildung strong {
+  .formation strong {
     text-decoration: underline;
   }
-  .laboral {
+  .work {
     grid-column: 1;
   }
   .skills {
@@ -152,12 +149,12 @@
     margin-top: 5px;
     width: 300px;
   }
-  .referenze {
+  .references {
     grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr)
   }
-  .referenze h3 {
+  .references h3 {
     grid-column: span 2;
   }
   .contacto {
@@ -167,5 +164,133 @@
   }
   .button {
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: 1280px){
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:  "titulo titulo"
+                            "about img-container"
+                            "skills languages"
+                            "formation formation"
+                            "references work";
+    }
+    .img-container {
+      grid-area: img-container;
+      width: 300px;
+      height: 80%;
+    }
+    .description {
+      display: none;
+    }
+    .titulo {
+      grid-area: titulo;
+      text-align: center;
+    }
+    .about {
+      grid-area: about;
+    }
+    .formation {
+      grid-area: formation;
+    }
+    .work {
+      grid-area: work;
+    }
+    .references {
+      grid-area: references;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 1088px){
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:  "titulo titulo"
+                            "about about"
+                            "formation formation"
+                            "skills languages"
+                            "work references";
+      margin: 30px;
+    }
+    .img-container {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1088px){
+    .grid {
+      grid-template-areas:  "titulo titulo"
+                            "about about"
+                            "formation formation"
+                            "skills languages"
+                            "work ."
+                            "references references";
+    }
+    .work {
+      display: flex;
+      flex-direction: column;
+    }
+    .references {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 920px){
+    .formation {
+      display: flex;
+      flex-direction: column;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:  "titulo"
+                            "about"
+                            "formation"
+                            "skills"
+                            "languages"
+                            "work" 
+                            "references";
+    }
+    .references {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 610px){
+    p {
+      /* font-size: 1em; */
+    }
+    .grid {
+      margin: 5px;
+    }
+    .content {
+      width: 100%;
+      word-wrap:break-word;
+    }
+  }
+  @media screen and (max-width: 515px){
+    .grid {
+      /* background-color: lightblue; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    p, h3, h4, strong {
+      /* padding-left: 5%;
+      padding-right: 5%; */
+      padding: 5px;
+    }
+    .content {
+      margin: 0 auto;
+    }
+    .references {
+      display: flex;
+      flex-direction: column;
+    }
+    .formation {
+      display: flex;
+      flex-direction: column;
+    }
+    progress {
+      max-width: 60%;
+    }
   }
 </style>

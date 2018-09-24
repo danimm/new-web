@@ -79,6 +79,9 @@
           {
             title: 'NextJS(SSR)'
           },
+          {
+            title: 'SPA'
+          }
         ],
         CSS3: [
           {

@@ -1,6 +1,10 @@
 <template lang="pug">
   .containerr
-    .card(v-for="(p, index) in projects")
+    a.card(
+      v-for="(p, index) in projects"
+      :href="p.url"
+      target="_blank"
+    )
       .card-image
         figure.image.is-4by1
           img(:src="p.src")
@@ -50,7 +54,7 @@
             title: 'Memory game',
             description: 'This project is a game to memorize colours using only Javascript. Only for desktop.',
             src: img5,
-            url: 'http://vue-local-storage.surge.sh'
+            url: 'http://mycolors.surge.sh/'
           },
         ]
       }
