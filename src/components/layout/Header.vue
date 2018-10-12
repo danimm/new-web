@@ -31,8 +31,9 @@
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link(href="#") Languages
           .navbar-dropdown.is-boxed
-            a.navbar-item(href="#") Spanish: Coming soon 👍🏻
-            a.navbar-item(href="#") German: Coming soon 👍🏻
+            a.navbar-item(href="#") 🇪🇸 Is Coming!
+            a.navbar-item(href="#") 🇬🇧 Is Coming!
+            a.navbar-item(href="#") 🇩🇪 Is Coming!
 </template>
 
 <script>
