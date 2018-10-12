@@ -254,9 +254,6 @@
     }
   }
   @media screen and (max-width: 610px){
-    p {
-      /* font-size: 1em; */
-    }
     .grid {
       margin: 5px;
     }

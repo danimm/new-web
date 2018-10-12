@@ -2,7 +2,7 @@
   .grid
     .message.is-light
       .message-header.has-text-centered
-        p.title.cen Long life learning
+        p.title.cen Lifelong learning
       .message-body
         .content.progress-container
           .content(v-for="t in techs")
