@@ -157,7 +157,7 @@
         ],
         Soon: [
           {
-            title: 'Comming soon..✌🏻'
+            title: 'Coming soon..✌🏻'
           },
           {
             title: 'Node'
@@ -167,6 +167,9 @@
           },
           {
             title: 'MongoDB'
+          },
+          {
+            title: 'Redux'
           },
         ]
       }

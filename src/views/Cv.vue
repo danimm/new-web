@@ -7,7 +7,6 @@
       img.foto(src="@/assets/daniel.jpg")
     .content.description
       .notification
-        p This is just a small version using only CSS. It's not Responsive yet
         p If you want to see the complete pdf version, write me an email.
           a.button.is-link(href="mailto:info@danimm.com") Email me!
     .content.about

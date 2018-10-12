@@ -5,7 +5,7 @@
         h1.title Daniel Muñoz Martín
         h2.subtitle Frontend Developer
         .content
-          p New Design! I'm still working on new features. Comming soon..🤔👍🏻
+          p New Design! I'm still working on new features. Coming soon..🤔👍🏻
 </template>
 
 <style lang="scss" scoped>
