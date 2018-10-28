@@ -39,7 +39,7 @@
             url: 'http://vue-basic.surge.sh'
           },
           {
-            title: 'Memory game',
+            title: 'Local Storage',
             description: 'This is a project using the local storage to create a list of tasks.',
             src: img3,
             url: 'http://vue-local-storage.surge.sh'
