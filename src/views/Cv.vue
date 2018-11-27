@@ -23,13 +23,13 @@
       .content
         p
           strong HTML5 / CSS3:
-          |  Responsive Design,Bulma,MaterializeCSS,Bootstrap,Pug,SASS/Stylus,CSS-Grid,PostCSS
+        p Responsive Design,Bulma,MaterializeCSS,Bootstrap,Foundation,Pug,SASS/Stylus,CSS-Grid,PostCSS
         p
           strong DevTools:
-          |  Webpack, Git/ GitHub, Sketch, NPM, ESLint, Now
+        p Webpack, Git/ GitHub, Sketch, NPM, ESLint, Now
         p
           strong Javascript:
-          |  ES6,Babel,VueJS,React,JSX/Style JSX,Single Page Application(SPA),Server/Client Side Render(SSR/CSR)
+        p ES6,Babel,VueJS,React,JSX/Style JSX,Single Page Application(SPA),Server/Client Side Render(SSR/CSR),Vue-Router,i18n(internationalization)
         p
           strong Backend:
           |  Firebase

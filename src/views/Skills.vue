@@ -81,6 +81,12 @@
           },
           {
             title: 'SPA'
+          },
+          {
+            title: 'Vue-Router'
+          },
+          {
+            title: 'i18n'
           }
         ],
         CSS3: [

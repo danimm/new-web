@@ -22,15 +22,30 @@
   import img3 from '@/assets/images/vuelocalstorage.png';
   import img4 from '@/assets/images/vuememory.png';
   import img5 from '@/assets/images/colors.png';
+  import img6 from '@/assets/images/huetor.png';
+
+
   export default {
     data() {
       return {
         projects: [
           {
+            title: 'Huetor',
+            description: 'This is a web-project for a lodgings company using Responsive Design, Vue.js, Vue-Router and i18n(internationalization).',
+            src: img6,
+            url: 'https://huetor.netlify.com/'
+          },
+          {
             title: 'Vue Music',
             description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.',
             src: img1,
             url: 'http://vue-music.now.sh'
+          },
+          {
+            title: 'Memory game',
+            description: 'This project is a game to memorize colours using only Javascript. Only for desktop.',
+            src: img5,
+            url: 'http://mycolors.surge.sh/'
           },
           {
             title: 'Last.fm',
@@ -49,13 +64,7 @@
             description: 'This project is a game to memorize letters using only Javascript. Only for desktop.',
             src: img4,
             url: 'http://vue-memory.surge.sh'
-          },
-          {
-            title: 'Memory game',
-            description: 'This project is a game to memorize colours using only Javascript. Only for desktop.',
-            src: img5,
-            url: 'http://mycolors.surge.sh/'
-          },
+          }
         ]
       }
     }
