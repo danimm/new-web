@@ -4,7 +4,7 @@
       .columns
         .column
           figure.image
-            img(src="@/assets/daniel.jpg")
+            img(src="https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fdaniel.jpg?alt=media&token=ac465dc4-8ef6-48b9-a08b-7563bfdc3a18")
         .column
           h3 About me
           p Hi! I'm Daniel and I am a curious, hard-working and ambitious person who pays attention to the small details. I am into the Frontend development world since 2016. In addition I study on a daily basis using an online course format the new platform technologies, in order to be up to date regarding the new frameworks and skills that are used and demanded by the companies nowadays.  

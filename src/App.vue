@@ -9,6 +9,7 @@
 <script>
   import DmHeader from '@/components/layout/Header.vue'
   import DmFooter from '@/components/layout/Footer.vue'
+
   export default {
     components: { DmHeader, DmFooter }
   }
