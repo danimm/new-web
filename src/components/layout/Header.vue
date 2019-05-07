@@ -31,29 +31,28 @@
         .navbar-item.has-dropdown.is-hoverable
           a.navbar-link(href="#") Languages
           .navbar-dropdown.is-boxed
-            a.navbar-item(href="#") 🇪🇸 Is Coming!
+            a.navbar-item(href="#") 🇪🇸 Español
             a.navbar-item(href="#") 🇬🇧 Is Coming!
             a.navbar-item(href="#") 🇩🇪 Is Coming!
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        isOpen: false
-      }
+export default {
+  data() {
+    return {
+      isOpen: false
+    };
+  },
+  methods: {
+    openMenu() {
+      this.isOpen = true;
     },
-    methods: {
-      openMenu() {
-        this.isOpen = true
-      },
-      closeMenu() {
-        this.isOpen = false
-      }
+    closeMenu() {
+      this.isOpen = false;
     }
   }
+};
 </script>
 
 <style scoped>
-
 </style>

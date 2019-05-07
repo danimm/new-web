@@ -18,21 +18,21 @@
       .content
         p.title Frontend web developer
       p platzi.com | 2016 - currently
-      p Platzi is one of the best online platforms worldwide. They have more than 700,000 students from all over the world. Visit my profile to see a little more about my knowledge. ➡️ 
-        a(href="https://platzi.com/@danimm/" target="_blank").is-link https://platzi.com/@danimm
+      p Platzi is one of the best online platforms worldwide. They have more than 1,00,000 students from all over the world. Visit my profile to see a little more about my knowledge. 
+        a(href="https://platzi.com/@danimm/" target="_blank").is-link ➡️ https://platzi.com/@danimm
       .content
         p
           strong HTML5 / CSS3:
         p Responsive Design,Bulma,MaterializeCSS,Bootstrap,Foundation,Pug,SASS/Stylus,CSS-Grid,PostCSS
         p
           strong DevTools:
-        p Webpack, Git/ GitHub, Sketch, NPM, ESLint, Now
+        p Webpack, Git/ GitHub, Sketch, NPM / Yarn, ESLint, Now, VSCode
         p
           strong Javascript:
         p ES6,Babel,VueJS,React,JSX/Style JSX,Single Page Application(SPA),Server/Client Side Render(SSR/CSR),Vue-Router,i18n(internationalization)
         p
           strong Backend:
-          |  Firebase
+        p   Firebase, PHP, Laravel, SQL, MySQL, PHPMyAdmin
       .content
         p.title Management Information Systems 
         p Málaga ( Spain ) | 2007 - 2012
@@ -61,7 +61,7 @@
           progress.progress.is-success(value="40" max="100")
     .content.work
       h3.title.is-3 Work experience
-      strong Inventur Mitarbeiter
+      strong Inventur Team
       p SPAR HANDELS AG | 2014 - currently
       strong Hardware-Techniker
       p X-TROM (Spanien) | 2012 - 2013
@@ -69,7 +69,7 @@
       h3.title.is-3 References
       .content
         p Monika Graf
-        p SPAR Inventur Team Leiterin
+        p SPAR Team Leiterin
         p +41 79 833 69 19
         p monika.graf@spar.ch
       .content
@@ -80,213 +80,219 @@
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {};
 </script>
 
 <style scoped>
-  p {
-    font-size: 1.2em;
-  }
-  .card {
-    padding: 20px;
-  }
+p {
+  font-size: 1.2em;
+}
+.card {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr 300px;
+}
+.titulo {
+  grid-column: 1 / span 2;
+  text-align: end;
+  padding-right: 40px;
+}
+h3,
+h4 {
+  color: #374f75;
+}
+.description {
+  grid-column: span 2;
+  padding: 10px;
+}
+.about {
+  grid-row: span 2;
+  grid-column: 3;
+}
+.img-container {
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+}
+.img-container img {
+  border: 2px solid #374f75;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  height: 380px;
+  width: 100%;
+}
+.formation {
+  grid-column: span 2;
+}
+.formation strong {
+  text-decoration: underline;
+}
+.work {
+  grid-column: 1;
+}
+.skills {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+.skills p {
+  /* text-align: right; */
+  margin-right: 5px;
+  text-decoration: underline;
+}
+.skills progress {
+  margin-top: 5px;
+  width: 300px;
+}
+.references {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.references h3 {
+  grid-column: span 2;
+}
+.contacto {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1280px) {
   .grid {
-    display: grid;
-    grid-gap: 20px;
-    margin-top: 40px;
-    grid-template-columns: 1fr 1fr 300px;
-  }
-  .titulo {
-    grid-column: 1 / span 2;
-    text-align: end;
-    padding-right: 40px;
-  }
-  h3,h4 {
-    color: #374f75;
-  }
-  .description {
-    grid-column: span 2;
-    padding: 10px;
-  }
-  .about {
-    grid-row: span 2;
-    grid-column: 3;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "titulo titulo"
+      "about img-container"
+      "skills languages"
+      "formation formation"
+      "references work";
   }
   .img-container {
-    grid-row: span 2;
-    display: flex;
-    justify-content: center;
+    grid-area: img-container;
+    width: 300px;
+    height: 80%;
   }
-  .img-container img {
-    border: 2px solid #374f75;
-    /* border-radius: 50%; */
-    object-fit: cover;
-    height: 380px;
-    width: 100%;
+  .description {
+    display: none;
+  }
+  .titulo {
+    grid-area: titulo;
+    text-align: center;
+  }
+  .about {
+    grid-area: about;
   }
   .formation {
-    grid-column: span 2;
-  }
-  .formation strong {
-    text-decoration: underline;
+    grid-area: formation;
   }
   .work {
-    grid-column: 1;
-  }
-  .skills {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-  }
-  .skills p {
-    /* text-align: right; */
-    margin-right: 5px;
-    text-decoration: underline;
-  }
-  .skills progress {
-    margin-top: 5px;
-    width: 300px;
+    grid-area: work;
   }
   .references {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr)
-  }
-  .references h3 {
-    grid-column: span 2;
-  }
-  .contacto {
-    grid-column: span 3;
+    grid-area: references;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
-  .button {
-    margin-left: 10px;
+}
+@media screen and (max-width: 1088px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "titulo titulo"
+      "about about"
+      "formation formation"
+      "skills languages"
+      "work references";
+    margin: 30px;
   }
-
-  @media screen and (max-width: 1280px){
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:  "titulo titulo"
-                            "about img-container"
-                            "skills languages"
-                            "formation formation"
-                            "references work";
-    }
-    .img-container {
-      grid-area: img-container;
-      width: 300px;
-      height: 80%;
-    }
-    .description {
-      display: none;
-    }
-    .titulo {
-      grid-area: titulo;
-      text-align: center;
-    }
-    .about {
-      grid-area: about;
-    }
-    .formation {
-      grid-area: formation;
-    }
-    .work {
-      grid-area: work;
-    }
-    .references {
-      grid-area: references;
-      display: flex;
-      flex-direction: column;
-    }
+  .img-container {
+    display: none;
   }
-  @media screen and (max-width: 1088px){
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas:  "titulo titulo"
-                            "about about"
-                            "formation formation"
-                            "skills languages"
-                            "work references";
-      margin: 30px;
-    }
-    .img-container {
-      display: none;
-    }
+}
+@media screen and (max-width: 1088px) {
+  .grid {
+    grid-template-areas:
+      "titulo titulo"
+      "about about"
+      "formation formation"
+      "skills languages"
+      "work ."
+      "references references";
   }
-  @media screen and (max-width: 1088px){
-    .grid {
-      grid-template-areas:  "titulo titulo"
-                            "about about"
-                            "formation formation"
-                            "skills languages"
-                            "work ."
-                            "references references";
-    }
-    .work {
-      display: flex;
-      flex-direction: column;
-    }
-    .references {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
+  .work {
+    display: flex;
+    flex-direction: column;
   }
-  @media screen and (max-width: 920px){
-    .formation {
-      display: flex;
-      flex-direction: column;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-      grid-template-areas:  "titulo"
-                            "about"
-                            "formation"
-                            "skills"
-                            "languages"
-                            "work" 
-                            "references";
-    }
-    .references {
-      display: flex;
-      flex-direction: column;
-    }
+  .references {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 610px){
-    .grid {
-      margin: 5px;
-    }
-    .content {
-      width: 100%;
-      word-wrap:break-word;
-    }
+}
+@media screen and (max-width: 920px) {
+  .formation {
+    display: flex;
+    flex-direction: column;
   }
-  @media screen and (max-width: 515px){
-    .grid {
-      /* background-color: lightblue; */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    p, h3, h4, strong {
-      /* padding-left: 5%;
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "about"
+      "formation"
+      "skills"
+      "languages"
+      "work"
+      "references";
+  }
+  .references {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 610px) {
+  .grid {
+    margin: 5px;
+  }
+  .content {
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
+@media screen and (max-width: 515px) {
+  .grid {
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p,
+  h3,
+  h4,
+  strong {
+    /* padding-left: 5%;
       padding-right: 5%; */
-      padding: 5px;
-    }
-    .content {
-      margin: 0 auto;
-    }
-    .references {
-      display: flex;
-      flex-direction: column;
-    }
-    .formation {
-      display: flex;
-      flex-direction: column;
-    }
-    progress {
-      max-width: 60%;
-    }
+    padding: 5px;
   }
+  .content {
+    margin: 0 auto;
+  }
+  .references {
+    display: flex;
+    flex-direction: column;
+  }
+  .formation {
+    display: flex;
+    flex-direction: column;
+  }
+  progress {
+    max-width: 60%;
+  }
+}
 </style>
