@@ -3,9 +3,9 @@
     .content
       .columns
         .column
-          h4.subtitle Thank you for your visit!
-          p The purpose of this website is to have all my personal projects and knowledge in one place.
-          p If you have any questions write me to: 
+          h4.subtitle {{ $t('footer.title') }}
+          p {{ $t('footer.text1') }}
+          p {{ $t('footer.text2') }}
             a(:href="`mailto:${mail}`") info@danimm.com
           a.is-link(href="https://www.linkedin.com/in/daniel-mm/" target="_blank")
             img(src="@/assets/footer-icons/linkedin.svg")
@@ -19,42 +19,42 @@
             tbody
               tr
                 td.has-text-centered-mobile
-                  router-link(to="/") Home
+                  router-link(to="/") {{ $t('footer.navbar.home') }}
               tr
                 td.has-text-centered-mobile
-                  router-link(to="about") About
+                  router-link(to="about") {{ $t('footer.navbar.about') }}
               tr
                 td.has-text-centered-mobile
-                  router-link(to="portfolio") Portfolio
+                  router-link(to="portfolio") {{ $t('footer.navbar.portfolio') }}
               tr
                 td.has-text-centered-mobile
-                  router-link(to="skills") Skills
+                  router-link(to="skills") {{ $t('footer.navbar.skills') }}
               tr
                 td.has-text-centered-mobile
-                  router-link(to="cv") CV
+                  router-link(to="cv") {{ $t('footer.navbar.cv') }}
 
       .content.has-text-centered
-        p Created by Daniel Muñoz Martín
+        p {{ $t('footer.created') }}
 </template>
 
 <script>
-  export default {
+export default {
     data() {
-      return {
-        mail: 'info@danimm.com'
-      }
+        return {
+            mail: "info@danimm.com"
+        };
     }
-  }
+};
 </script>
 
 <style scoped>
-  table {
-      background-color: transparent;
-    }
-    a.is-link {
-      padding-right: 20px;
-    }
-    a.is-link img {
-      height: 40px;
-    }
+table {
+    background-color: transparent;
+}
+a.is-link {
+    padding-right: 20px;
+}
+a.is-link img {
+    height: 40px;
+}
 </style>

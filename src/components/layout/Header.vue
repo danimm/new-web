@@ -19,38 +19,42 @@
       :class="{ 'is-active': isOpen === true }"
       @focusout="closeMenu")
       .navbar-end(@click="closeMenu")
-        router-link.navbar-item(to="/") Home
+        router-link.navbar-item(to="/") {{ $t('header.navbar.home') }}
         router-link.navbar-item(
           @click="closeMenu" 
-          to="about") About
+          to="about") {{ $t('header.navbar.about') }}
         router-link.navbar-item(
           @click="closeMenu"
-          to="portfolio") Portfolio
-        router-link.navbar-item(to="skills") Skills
-        router-link.navbar-item(to="cv") CV
+          to="portfolio") {{ $t('header.navbar.portfolio') }}
+        router-link.navbar-item(to="skills") {{ $t('header.navbar.skills') }}
+        router-link.navbar-item(to="cv") {{ $t('header.navbar.cv') }}
         .navbar-item.has-dropdown.is-hoverable
-          a.navbar-link(href="#") Languages
+          a.navbar-link(href="#") {{ $t('header.navbar.languages.title') }}
           .navbar-dropdown.is-boxed
-            a.navbar-item(href="#") 🇪🇸 Español
-            a.navbar-item(href="#") 🇬🇧 Is Coming!
-            a.navbar-item(href="#") 🇩🇪 Is Coming!
+            a.navbar-item(@click="selectLang('es')") {{ $t('header.navbar.languages.spanish') }}
+            a.navbar-item(@click="selectLang('en')") {{ $t('header.navbar.languages.english') }}
+            a.navbar-item(@click="selectLang('de')") {{ $t('header.navbar.languages.german') }}
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      isOpen: false
-    };
-  },
-  methods: {
-    openMenu() {
-      this.isOpen = true;
+    data() {
+        return {
+            isOpen: false
+        };
     },
-    closeMenu() {
-      this.isOpen = false;
+    methods: {
+        selectLang(lang) {
+            this.$i18n.locale = lang;
+            console.log(this.$i18n);
+        },
+        openMenu() {
+            this.isOpen = true;
+        },
+        closeMenu() {
+            this.isOpen = false;
+        }
     }
-  }
 };
 </script>
 

@@ -3,18 +3,18 @@
     .hero-body
       .container.has-text-centered
         h1.title Daniel Muñoz Martín
-        h2.subtitle Frontend Developer
+        h2.subtitle {{ $t('home.subtitle') }}
         .content
-          p New Design! I'm still working on new features. Coming soon..🤔👍🏻
+          p {{ $t('home.content') }}
 </template>
 
 <style lang="scss" scoped>
 // @ is an alias to /src
-  .title {
+.title {
     font-size: 4em;
-  }
+}
 
-  .subtitle {
+.subtitle {
     font-size: 2.5em;
-  }
+}
 </style>
