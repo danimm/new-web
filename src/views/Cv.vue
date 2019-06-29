@@ -32,13 +32,13 @@
         p ES6,Babel,VueJS,React,JSX/Style JSX,Single Page Application(SPA),Server/Client Side Render(SSR/CSR),Vue-Router,i18n(internationalization)
         p
           strong Backend:
-        p   Firebase, PHP, Laravel, SQL, MySQL, PHPMyAdmin
+        p   Firebase, PHP, Laravel, Blade, SQL, MySQL, PHPMyAdmin
       .content
         p.title {{ $t('cv.formation.formation1.studium.title')}} 
         p {{ $t('cv.formation.formation1.studium.where')}}
         p {{ $t('cv.formation.formation1.studium.certificate')}}
     .content
-      h3.title.is-3 Skills
+      h3.title.is-3 {{ $t('cv.skills.title')}} 
       .skills
         .content
           p HTML5
@@ -49,7 +49,7 @@
           progress.progress.is-success(value="70" max="100")
           progress.progress.is-success(value="50" max="100")
     .content.language
-      h3.title.is-3 Languages
+      h3.title.is-3 {{ $t('cv.languages.title') }}
       .skills
         .left-side
           p Spanish
@@ -60,13 +60,13 @@
           progress.progress.is-success(value="60" max="100")
           progress.progress.is-success(value="40" max="100")
     .content.work
-      h3.title.is-3 Work experience
+      h3.title.is-3 {{ $t('cv.work.title') }}
       strong Inventur Team
       p SPAR HANDELS AG | 2014 - currently
       strong Hardware-Techniker
       p X-TROM (Spanien) | 2012 - 2013
     .content.references
-      h3.title.is-3 References
+      h3.title.is-3 {{ $t('cv.references') }}
       .content
         p Monika Graf
         p SPAR Team Leiterin

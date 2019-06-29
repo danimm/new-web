@@ -7,7 +7,7 @@ const messages = {
     en: {
         home: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Front-end Developer",
+            subtitle: "Junior Front-end Developer",
             content:
                 "New Design! I'm still working on new features. Coming soon..👍🏻"
         },
@@ -84,7 +84,7 @@ const messages = {
         },
         cv: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Front-end Developer",
+            subtitle: "Junior Front-end Developer",
             notification:
                 "If you want to see the complete pdf version, write me an email.",
             button: "Email me!",
@@ -111,8 +111,8 @@ const messages = {
             skills: {
                 title: "Skills"
             },
-            languajes: {
-                title: "Languajes",
+            languages: {
+                title: "Languages",
                 spanish: "Spanish",
                 german: "German",
                 english: "English"
@@ -127,7 +127,8 @@ const messages = {
                     title: "Hardware-Techniker",
                     time: "X-TROM (Spanien) | 2012 - 2013"
                 }
-            }
+            },
+            references: "References"
         },
         footer: {
             title: "Thank you for your visit!",
@@ -147,7 +148,7 @@ const messages = {
     de: {
         home: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Front-end web Entwickler",
+            subtitle: "Junior Front-end web Entwickler",
             content:
                 "Neues Design! Ich arbeite immer noch an neuen Funktionen. Kommt bald....👍🏻"
         },
@@ -225,7 +226,7 @@ const messages = {
         },
         cv: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Front-end Entwickler",
+            subtitle: "Junior Front-end Entwickler",
             notification:
                 "Wenn Sie die vollständige PDF-Version sehen möchten, schreiben Sie mir eine E-Mail.",
             button: "Email senden",
@@ -253,7 +254,7 @@ const messages = {
             skills: {
                 title: "Fähigkeiten"
             },
-            languajes: {
+            languages: {
                 title: "Sprachen",
                 spanish: "Spanisch",
                 german: "Deutsch",
@@ -269,7 +270,8 @@ const messages = {
                     title: "Hardware-Techniker",
                     time: "X-TROM (Spanien) | 2012 - 2013"
                 }
-            }
+            },
+            references: "Referenzen"
         },
         footer: {
             title: "Thank you for your visit!",
@@ -289,7 +291,7 @@ const messages = {
     es: {
         home: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Desarrollador Frontend",
+            subtitle: "Desarrollador Frontend Junior",
             content:
                 "Nuevo Diseño! Estoy trabajando en nuevas funcionalidades. Vendrán pronto..👍🏻"
         },
@@ -301,7 +303,7 @@ const messages = {
                 skills: "Habilidades",
                 cv: "CV",
                 languages: {
-                    title: "Lenguajes",
+                    title: "Idiomas",
                     spanish: "🇪🇸 Español",
                     english: "🇬🇧 Inglés",
                     german: "🇩🇪 Alemán"
@@ -366,7 +368,7 @@ const messages = {
         },
         cv: {
             title: "Daniel Muñoz Martín",
-            subtitle: "Desarrollador Frontend",
+            subtitle: "Desarrollador Frontend Junior",
             notification: "Si quieres ver la versión en PDF, envíame un email",
             button: "Quiero verla!",
             about: "Acerca de mí",
@@ -392,7 +394,7 @@ const messages = {
             skills: {
                 title: "Habilidades"
             },
-            languajes: {
+            languages: {
                 title: "Lenguajes",
                 spanish: "Español",
                 german: "Alemán",
@@ -408,7 +410,8 @@ const messages = {
                     title: "Técnico de Hardware",
                     time: "X-TROM (España) | 2012 - 2013"
                 }
-            }
+            },
+            references: "Referencias"
         },
         footer: {
             title: "Gracias por tu visita!",

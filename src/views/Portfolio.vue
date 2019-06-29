@@ -30,12 +30,21 @@ export default {
                     url: "https://www.alojamientoshuetor.com/"
                 },
                 {
+                    title: "LaraFoto",
+                    description:
+                        "This is a web-project using Laravel with MySQL for create a Social Network like Instagram.",
+                    src:
+                        "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2FLarafoto.png?alt=media&token=af779818-471f-42c0-be6a-63d554772666"
+                    // url: ""
+                },
+                {
                     title: "Vue Music",
                     description:
                         "Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.",
                     src:
                         "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fvuemusic.png?alt=media&token=3f779d1f-37fc-4459-a301-33a0ad66ecd3",
                     url: "http://vue-music.now.sh"
+                    // https://github.com/danimm/Curso-Profesional-Vuejs/tree/master/Vue%20Profesional/vue-music
                 },
                 {
                     title: "Memory game",
