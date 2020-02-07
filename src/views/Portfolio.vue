@@ -23,8 +23,7 @@ export default {
       projects: [
         {
           title: "Platzi-Exchange",
-          description:
-            "This is a web-project for a exchange-platform using Vue.js and Vue-router",
+          description: "This is a web-project for a exchange-platform using Vue.js and Vue-router",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fplatzi-exchange.png?alt=media&token=720b023e-6db4-4a3d-b3d0-876cf652a070",
           url: "https://platzi-vue.netlify.com/"
@@ -39,11 +38,10 @@ export default {
         },
         {
           title: "LaraFoto",
-          description:
-            "This is a web-project using Laravel with MySQL for create a Social Network like Instagram.",
+          description: "This is a web-project using Laravel with MySQL for create a Social Network like Instagram.",
           src:
-            "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2FLarafoto.png?alt=media&token=af779818-471f-42c0-be6a-63d554772666"
-          // url: ""
+            "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2FLarafoto.png?alt=media&token=af779818-471f-42c0-be6a-63d554772666",
+          url: "https://github.com/danimm/Larafoto"
         },
         {
           title: "Vue Music",
@@ -51,45 +49,39 @@ export default {
             "Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fvuemusic.png?alt=media&token=3f779d1f-37fc-4459-a301-33a0ad66ecd3",
-          url: "http://vue-music.now.sh"
-          // https://github.com/danimm/Curso-Profesional-Vuejs/tree/master/Vue%20Profesional/vue-music
+          url: "https://github.com/danimm/Vue-Profesional-2018"
         },
         {
           title: "Memory game",
-          description:
-            "This project is a game to memorize colours using only Javascript. Only for desktop.",
+          description: "This project is a game to memorize colours using only Javascript. Only for desktop.",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fcolors.png?alt=media&token=ed8b906f-c575-42a8-8b0f-ccc17a342e0b",
           url: "http://mycolors.surge.sh/"
         },
         {
           title: "Last.fm",
-          description:
-            "In this simple project to show a small list of artists using the last fm API.",
+          description: "In this simple project to show a small list of artists using the last fm API.",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fvuebasic.png?alt=media&token=7c2a3e7b-f12f-4b16-94f1-cf87a96c51c0",
           url: "http://vue-basic.surge.sh"
         },
         {
           title: "Local Storage",
-          description:
-            "This is a project using the local storage to create a list of tasks.",
+          description: "This is a project using the local storage to create a list of tasks.",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fvuelocalstorage.png?alt=media&token=bb8695e1-3d18-4a54-b58e-f5398131f24d",
           url: "http://vue-local-storage.surge.sh"
         },
         {
           title: "Memory game",
-          description:
-            "This project is a game to memorize letters using only Javascript. Only for desktop.",
+          description: "This project is a game to memorize letters using only Javascript. Only for desktop.",
           src:
             "https://firebasestorage.googleapis.com/v0/b/web-vue-f0b33.appspot.com/o/images%2Fvuememory.png?alt=media&token=9ee36c3a-8b86-4d93-9425-20e3cea9b395",
           url: "http://vue-memory.surge.sh"
         },
         {
           title: "Responsive Grid",
-          description:
-            "Check responsive design with Grid layout from CSS3, just awesome !!",
+          description: "Check responsive design with Grid layout from CSS3, just awesome !!",
           src: "https://i.pinimg.com/564x/96/c6/3e/96c63e77096f8af8964cfcbb47c3df23.jpg",
           url: "http://grid-example.surge.sh/"
         }
